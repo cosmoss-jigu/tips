@@ -51,7 +51,8 @@ sudo ./ycsb tips <index-- hlist/lfhlist/bst/lfbst/art/btree/clht>
 ## Contact 
 Please reach us at madhavakrishnan@vt.edu and changwoo@vt.edu
 
-## Citation 
+## Citation
+```
 @inproceedings {krishnan:tips,
 title = {{TIPS} : Making Volatile Index Structures Persistent with DRAM-NVMM Tiering},
 booktitle = {2021 {USENIX} Annual Technical Conference ({USENIX} {ATC} 21)},
@@ -60,3 +61,4 @@ url = {https://www.usenix.org/conference/atc21/presentation/krishnan},
 publisher = {{USENIX} Association},
 month = jul,
 }
+```
