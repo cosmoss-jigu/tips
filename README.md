@@ -49,7 +49,7 @@ sudo ./ycsb tips <index-- hlist/lfhlist/bst/lfbst/art/btree/clht>
   if you use a different path.
 
 ## Contact 
-Please reach us at madhavakrishnan@vt.edu and changwoo@vt.edu
+Reach out to us at madhavakrishnan@vt.edu and changwoo@vt.edu
 
 ## Citation
 ```
