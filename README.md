@@ -13,19 +13,27 @@ presentation, and NVMW video presentations below.
 ## Running TIPS-enabled Indexes 
 
 ### Preparing the YCSB workload files
+- Clone TIPS repo
 ```
-git clone git@github.com:cosmoss-vt/tips-ycsb.git
-cd index-microbench
+git clone git@github.com:cosmoss-vt/tips.git
+cd tips/index-microbench
+```
+- Download and setup YCSB 
+```
 curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.11.0/ycsb-0.11.0.tar.gz
 tar xfvz ycsb-0.11.0.tar.gz
 mv ycsb-0.11.0 YCSB
 mkdir workloads
 sh generate_all_workloads.sh
 ```
-### Compiling TIPS
+### Compiling TIPS source and benchmarks
+- Compile the TIPS source
 ```
-cd tips/src
+cd tips/tips-lib/src
 make 
+```
+- Prepare the build files for benchmarks
+```
 cd ../../
 mkdir build
 cd build
