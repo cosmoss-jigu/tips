@@ -58,9 +58,9 @@ endif()
 add_definitions(-DADD_PADDING)
 add_definitions(-DDEFAULT) ## CLHT
 
-include_directories(tips/include tips/benchmark tips/src tips/benchmark/include) 
+include_directories(tips-lib/include tips-lib/benchmark tips-lib/src tips-lib/benchmark/include) 
 
-add_subdirectory(tips)
+add_subdirectory(tips-lib)
 
 find_library(JemallocLib jemalloc)
 find_library(TbbLib tbb)
@@ -69,9 +69,9 @@ find_package (Threads)
 set(INDEX_FILES nvmm-index/FAST_FAIR/btree.h)
 
 add_library(Indexes ${INDEX_FILES})
-link_directories(${CMAKE_SOURCE_DIR}/tips/benchmark/lib)
+link_directories(${CMAKE_SOURCE_DIR}/tips-lib/benchmark/lib)
 
-target_link_libraries(Indexes ${TbbLib} ${JemallocLib} ${CMAKE_THREAD_LIBS_INIT} pthread tipsDS ${CMAKE_SOURCE_DIR}/tips/src/libtips.a pmem pmemobj)
+target_link_libraries(Indexes ${TbbLib} ${JemallocLib} ${CMAKE_THREAD_LIBS_INIT} pthread tipsDS ${CMAKE_SOURCE_DIR}/tips-lib/src/libtips.a pmem pmemobj)
 
 set(YCSB_TEST ycsb.cpp)
 add_executable(ycsb ${YCSB_TEST})
