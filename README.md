@@ -6,7 +6,8 @@ YCSB and the performance results presented in the ATC 2021 paper can be
 reproduced from this repository. Please find the link to the paper, ATC video
 presentation, and NVMW video presentations below.
 
-- [ATC-2021-paper-video](https://www.usenix.org/conference/atc21/presentation/krishnan)
+- [ATC-2021-paper](https://www.usenix.org/conference/atc21/presentation/krishnan)
+- [ATC-2021-talk](https://www.youtube.com/watch?v=v80-xvvy3Ms)
 - [NVMW-2021-long-video](https://www.youtube.com/watch?v=4rSTHLAvq7k)
 - [NVMW-2021-short-video](https://www.youtube.com/watch?v=arRwT5W9zSU)
 
