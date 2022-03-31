@@ -1,6 +1,6 @@
 # TIPS: Making Volatile Indexes Persistent With DRAM-NVMM Tiering (ATC 2021, NVMW 2021)
 
-This repository contains the source code of TIPS library and seven volatile
+This repository contains the source code for TIPS library and seven volatile
 indexes that are converted using TIPS. All the TIPS-indexes are integrated with
 YCSB and the performance results presented in the ATC 2021 paper can be
 reproduced from this repository. Please find the link to the paper, ATC video
